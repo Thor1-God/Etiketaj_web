@@ -38,16 +38,16 @@
 ### Linux / macOS
 
 ```bash
-git clone https://github.com/ВАШ_НИК/etikej.git
-cd etikej
+https://github.com/Thor1-God/Etiketaj_web.git
+cd etiketaj
 chmod +x start.sh && ./start.sh
 ```
 
 ### Windows
 
 ```bat
-git clone https://github.com/ВАШ_НИК/etikej.git
-cd etikej
+https://github.com/Thor1-God/Etiketaj_web.git
+cd etiketaj
 start.bat
 ```
 
