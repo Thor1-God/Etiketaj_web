@@ -7,7 +7,7 @@ echo   Этикетаж
 echo   ========
 echo.
 
-REM Проверяем venv в папке backend
+REM Проверяем venv
 if not exist "backend\venv\Scripts\activate.bat" (
     echo Ошибка: venv не найден в backend\venv
     pause
@@ -20,8 +20,8 @@ echo   Фронтенд -> http://localhost:5173
 echo   Swagger -> http://localhost:8000/api/docs
 echo.
 
-REM Запуск бэкенда (venv в папке backend)
-start "Backend" cmd /k "cd backend && venv\Scripts\activate.bat && uvicorn main:app --port 8000"
+REM Запуск бэкенда из корня (активируем venv и запускаем uvicorn с указанием пути)
+start "Backend" cmd /k "backend\venv\Scripts\activate.bat && uvicorn backend.main:app --port 8000"
 
 REM Запуск фронтенда
 start "Frontend" cmd /k "cd frontend && npm run dev"
