@@ -1,0 +1,22 @@
+.wrap  { padding: 0 18px 16px; }
+.label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--muted);
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+.card {
+  background: var(--s2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 16px 18px;
+  text-align: center;
+}
+.author { font-family:var(--font-serif); font-size:15px; font-weight:700; color:var(--cream); line-height:1.3; margin-bottom:5px; }
+.title  { font-family:var(--font-serif); font-style:italic; font-size:13px; color:var(--text); margin-bottom:5px; }
+.mat    { font-size:11px; color:var(--muted); margin-bottom:3px; }
+.size   { font-size:10px; color:var(--muted2); margin-bottom:3px; }
+.inv    { font-family:monospace; font-size:9px; color:var(--muted2); text-align:right; margin-top:8px; }

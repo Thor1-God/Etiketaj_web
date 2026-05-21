@@ -1,0 +1,49 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--s1);
+  flex-shrink: 0;
+}
+.label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.input, .select {
+  background: var(--s2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 6px 10px;
+  color: var(--text);
+  font-size: 13px;
+  outline: none;
+  transition: border-color .2s;
+}
+.input:focus, .select:focus { border-color: var(--gold); }
+.input::placeholder { color: var(--muted2); }
+.input  { flex: 1; min-width: 160px; }
+.short  { flex: none; width: 130px; }
+.select { cursor: pointer; }
+.select option { background: var(--s2); }
+.divider { width: 1px; height: 20px; background: var(--border); flex-shrink: 0; }
+.newBtn {
+  background: transparent;
+  border: 1px solid var(--border2);
+  border-radius: var(--r-sm);
+  padding: 6px 14px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  cursor: pointer;
+  transition: border-color .2s, color .2s;
+  white-space: nowrap;
+}
+.newBtn:hover { border-color: var(--gold); color: var(--gold); }
